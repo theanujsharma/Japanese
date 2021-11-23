@@ -6,7 +6,6 @@
 .round {
   border-radius: 50px;
 }
-
 h3,
 h6,
 span {
@@ -15,6 +14,14 @@ span {
 p {
   color: white;
 }
+.wrapper {
+  background-color: black;
+  width: 100%;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 .header-strip {
   background-color: #493d3d;
   margin-bottom: 20px;
@@ -22,13 +29,13 @@ p {
 .header-right {
   display: flex;
 }
-
 .card-flex {
   display: flex;
   width: 100%;
   justify-content: space-between;
   margin-bottom: 50px;
 }
+
 .icons {
   display: flex;
   justify-content: center;
@@ -46,6 +53,11 @@ p {
 .icons:nth-child(6) {
   width: 30%;
 }
+
+.icons:nth-child(6) {
+  grid-template-columns: span 4;
+}
+
 .icons:nth-child(6) > img {
   width: 25px;
 }
@@ -59,19 +71,12 @@ p {
 .a {
   margin-left: auto;
 }
-.wrapper {
-  background-color: black;
-  width: 100%;
-}
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
+
 .banner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: black;
-  color: white;
+  color: white; 
   margin-bottom: 20px;
 }
 .banner a {
@@ -228,6 +233,10 @@ img {
   width: 30%;
   line-height: 1;
 }
+.company-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 .flat-icons {
   padding-top: 50px;
 }
@@ -256,7 +265,6 @@ img {
   width: 23%;
   margin-left: 20px;
 }
-
 /* Dropdown */
 .dropdown {
   position: relative;
@@ -285,7 +293,7 @@ img {
   display: block;
 }
 /* For Smaller Screen */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 728px) {
   .cards {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
